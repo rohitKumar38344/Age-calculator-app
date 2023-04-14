@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github repo](https://github.com/rohitKumar38344/Age-calculator-app)
+- Live Site URL: [live site](https://dynamic-cobbler-820f0b.netlify.app/)
 
 ## My process
 
