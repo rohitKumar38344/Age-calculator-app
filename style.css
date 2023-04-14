@@ -1,0 +1,157 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 40rem;
+  height: 40rem;
+  border-radius: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom-right-radius: 12rem;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 1.5px;
+}
+
+input {
+  border: 1.5px solid hsl(0, 0%, 94%);
+  border-radius: 5px;
+  width: 8.4rem;
+  height: 3.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding: 0.8em;
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+.top-sec {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 3rem;
+
+  position: relative;
+}
+
+hr {
+  box-shadow: 0 0 5px hsl(0, 0%, 86%);
+  opacity: 0.3;
+  width: 85%;
+  margin: auto;
+}
+
+.day-field,
+.month-field,
+.year-field {
+  height: 7rem;
+}
+
+p[class^="empty"],
+p[class^="invalid"],
+.past-date-error {
+  color: hsl(0, 100%, 67%);
+}
+
+.hide {
+  display: none;
+}
+
+.calc-result-btn {
+  background-color: hsl(259, 100%, 65%);
+  width: 4.6rem;
+  height: auto;
+  padding: 1rem;
+  border-radius: 100%;
+
+  position: absolute;
+  bottom: -2rem;
+  right: 2.4rem;
+  z-index: 9999;
+}
+
+.calc-result-btn:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.output-sec {
+  padding: 2.4rem 0 0 3.2rem;
+}
+
+.output-sec div {
+  font-size: 4.8rem;
+  display: flex;
+  gap: 1rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.output-sec div p:nth-child(2) {
+  color: hsl(0, 0%, 8%);
+}
+
+.output-sec div p:first-child {
+  color: hsl(259, 100%, 65%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 37rem) {
+  html {
+    font-size: 60.5%;
+  }
+  .container {
+    width: 35rem;
+    margin: 0 2.4rem;
+  }
+
+  .calc-result-btn {
+    bottom: -4rem;
+    right: 45%;
+  }
+
+  .top-sec {
+    margin-bottom: 2rem;
+  }
+}

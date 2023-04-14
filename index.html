@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="container">
+        <div class="top-sec">
+          <div class="day-field">
+            <label for="day">Day</label>
+            <input type="number" name="day" id="day" placeholder="DD" />
+            <p class="empty-d-error hide">This field is required</p>
+            <p class="invalid-d-error hide">Must be a valid day</p>
+            <p class="invalid-date hide">Must be a valid date</p>
+          </div>
+          <div class="month-field">
+            <label for="month">Month</label>
+            <input type="number" name="month" id="month" placeholder="MM" />
+            <p class="empty-m-error hide">This field is required</p>
+            <p class="invalid-m-error hide">Must be a valid month</p>
+          </div>
+          <div class="year-field">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year" placeholder="YYYY" />
+            <p class="empty-y-error hide">This field is required</p>
+            <p class="invalid-y-error hide">Must be a valid year</p>
+            <p class="past-date-error hide">Must be in the past</p>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+            class="calc-result-btn"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </div>
+        <hr />
+        <div class="output-sec">
+          <div>
+            <p class="year-output">--</p>
+            <p>years</p>
+          </div>
+          <div>
+            <p class="months-output">--</p>
+            <p>months</p>
+          </div>
+          <div>
+            <p class="days-output">--</p>
+            <p>days</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://twitter.com/_iamrohitKumar">Rohit Kumar</a>.
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
